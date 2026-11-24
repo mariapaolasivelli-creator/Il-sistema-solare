@@ -1,0 +1,236 @@
+/* =========================================================
+   VARIABILI CSS: Modifica qui i valori per cambiare aspetto 
+   a tutto il sito in un colpo solo!
+   ========================================================= */
+:root {
+    --sfondo: #f4f7fb;          /* Colore di sfondo della pagina */
+    --testo: #1e293b;           /* Colore principale del testo (grigio molto scuro) */
+    --primario: #1d4ed8;        /* Colore per titoli e pulsanti (blu spazio) */
+    --accento: #f59e0b;         /* Colore per evidenziare esempi e bordi (giallo solare) */
+    --font-titoli: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    --font-testo: 'Verdana', 'Arial', sans-serif;
+}
+
+/* =========================================================
+   IMPOSTAZIONI GENERALI E LEGGIBILITÀ
+   ========================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--sfondo);
+    color: var(--testo);
+    font-family: var(--font-testo);
+    font-size: 19px;            /* Testo grande per facilitare la lettura in classe */
+    line-height: 1.6;           /* Spazio generoso tra le righe */
+    padding: 20px;
+}
+
+/* Contenitore centrale per non avere righe troppo lunghe */
+header, main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   INTESTAZIONE
+   ========================================================= */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border-bottom: 5px solid var(--primario);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    font-family: var(--font-titoli);
+    color: var(--primario);
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.intro {
+    font-size: 1.15rem;
+    color: #475569;
+}
+
+/* =========================================================
+   SCHEDE DEI CONTENUTI
+   ========================================================= */
+.scheda {
+    background-color: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: var(--font-titoli);
+    color: var(--primario);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--sfondo);
+    padding-bottom: 8px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+/* Riquadro evidenziato per gli esempi */
+.esempio {
+    background-color: #fffbeb;
+    border-left: 5px solid var(--accento);
+    padding: 15px 18px;
+    margin-top: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* =========================================================
+   PULSANTI E SEZIONE ESERCIZIO
+   ========================================================= */
+.btn {
+    background-color: var(--primario);
+    color: #ffffff;
+    font-family: var(--font-titoli);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.soluzione-nascosta {
+    display: none;              /* Nascosto all'inizio, mostrato via JavaScript */
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #eff6ff;
+    border: 2px solid var(--primario);
+    border-radius: 8px;
+}
+
+.lista-pianeti {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--primario);
+}
+
+/* =========================================================
+   SEZIONE QUIZ (SCELTA MULTIPLA)
+   ========================================================= */
+.domanda {
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Rende cliccabile tutta la riga della risposta */
+.domanda label {
+    display: block;
+    padding: 8px 12px;
+    margin: 6px 0;
+    background-color: var(--sfondo);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.domanda label:hover {
+    background-color: #e2e8f0;
+}
+
+.domanda input[type="radio"] {
+    transform: scale(1.3);      /* Ingrandisce il pallino di selezione */
+    margin-right: 12px;
+}
+
+/* =========================================================
+   STILI PER LA DOMANDA DI COLLEGAMENTO (DOMANDA 5)
+   ========================================================= */
+.riga-collegamento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--sfondo);
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.termine {
+    font-weight: bold;
+    color: var(--primario);
+    min-width: 160px;
+}
+
+.select-collegamento {
+    flex: 1;
+    min-width: 250px;
+    font-family: var(--font-testo);
+    font-size: 1rem;
+    color: var(--testo);
+    background-color: #ffffff;
+    padding: 10px 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Feedback visivo immediato dopo aver premuto "Calcola il punteggio" */
+.select-collegamento.corretto {
+    border-color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+.select-collegamento.errato {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+/* =========================================================
+   MESSAGGI DI RISULTATO DEL QUIZ
+   ========================================================= */
+.risultato {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.risultato:empty {
+    display: none;
+}
+
+.risultato.ottimo {
+    background-color: #dcfce7;
+    color: #166534;
+    border: 2px solid #22c55e;
+}
+
+.risultato.buono {
+    background-color: #fef9c3;
+    color: #854d0e;
+    border: 2px solid #eab308;
+}
+
+.risultato.riprova, .risultato.avviso {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 2px solid #ef4444;
+}

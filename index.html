@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Sistema Solare - Scienze 3ª Media</title>
+    <!-- Collegamento al foglio di stile -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Intestazione principale -->
+    <header>
+        <h1>☀️ Il Sistema Solare</h1>
+        <p class="intro">Benvenuti nello spazio! Scopriamo insieme la nostra casa cosmica: una grande famiglia di pianeti, lune e rocce che viaggia intorno a una stella.</p>
+    </header>
+
+    <main>
+        <!-- Sezione 1: Il Sole -->
+        <section class="scheda">
+            <h2>1. La nostra stella: il Sole</h2>
+            <p>Il Sole è una stella di medie dimensioni, ma contiene da solo il 99,8% di tutta la massa del Sistema Solare. È una gigantesca sfera di gas incandescenti, soprattutto idrogeno ed elio.</p>
+            <p>La sua forza di gravità tiene legati a sé tutti gli altri corpi celesti, costringendoli a girargli intorno lungo percorsi precisi chiamati <strong>orbite</strong>.</p>
+            <div class="esempio">
+                <strong>💡 Esempio:</strong> La luce del Sole viaggia a 300.000 km al secondo, ma la distanza è così grande che impiega circa 8 minuti per arrivare fino alla Terra.
+            </div>
+        </section>
+
+        <!-- Sezione 2: I pianeti rocciosi -->
+        <section class="scheda">
+            <h2>2. I pianeti rocciosi (interni)</h2>
+            <p>I quattro pianeti più vicini al Sole sono <strong>Mercurio, Venere, Terra e Marte</strong>. Sono relativamente piccoli, hanno una superficie solida fatta di roccia e metalli, e possiedono poche lune o nessuna.</p>
+            <div class="esempio">
+                <strong>💡 Esempio:</strong> Venere è il pianeta più caldo (oltre 460 °C), anche se è il secondo in ordine di distanza dal Sole. La sua atmosfera densissima intrappola il calore come una serra gigante.
+            </div>
+        </section>
+
+        <!-- Sezione 3: I giganti gassosi e ghiacciati -->
+        <section class="scheda">
+            <h2>3. I pianeti giganti (esterni)</h2>
+            <p>Oltre la fascia degli asteroidi troviamo quattro pianeti enormi: <strong>Giove, Saturno, Urano e Nettuno</strong>. Non hanno una superficie solida su cui atterrare, ma sono fatti di gas e ghiacci. Tutti hanno anelli e decine di satelliti naturali.</p>
+            <div class="esempio">
+                <strong>💡 Esempio:</strong> Giove è così grande che potrebbe contenere più di 1.300 Terre al suo interno. La sua famosa "Grande Macchia Rossa" è una tempesta attiva da secoli.
+            </div>
+        </section>
+
+        <!-- Sezione 4: I corpi minori -->
+        <section class="scheda">
+            <h2>4. I corpi minori dello spazio</h2>
+            <p>Nel Sistema Solare non ci sono solo i pianeti. Troviamo anche i <strong>pianeti nani</strong> (come Plutone), gli <strong>asteroidi</strong> (rocce che orbitano soprattutto tra Marte e Giove) e le <strong>comete</strong> (palle di ghiaccio e polvere che, avvicinandosi al Sole, sviluppano una lunga coda luminosa).</p>
+            <div class="esempio">
+                <strong>💡 Esempio:</strong> Quando un piccolo frammento di roccia spaziale entra nell'atmosfera terrestre e brucia per l'attrito, vediamo una scia luminosa che chiamiamo "stella cadente" (meteora).
+            </div>
+        </section>
+
+        <!-- Sezione Esercizio con soluzione nascosta -->
+        <section class="scheda esercizio-box">
+            <h2>✏️ Esercizio veloce: Metti in ordine!</h2>
+            <p>Prova a scrivere sul quaderno i nomi degli <strong>8 pianeti</strong> partendo dal più vicino al Sole fino al più lontano. Quando hai finito, controlla la risposta.</p>
+            
+            <button id="btn-soluzione" class="btn">Mostra la soluzione</button>
+            
+            <div id="box-soluzione" class="soluzione-nascosta">
+                <p><strong>Ordine corretto dal Sole:</strong></p>
+                <p class="lista-pianeti">1. Mercurio → 2. Venere → 3. Terra → 4. Marte → 5. Giove → 6. Saturno → 7. Urano → 8. Nettuno</p>
+                <p><em>Trucco per ricordarli: "<strong>M</strong>a <strong>V</strong>uoi <strong>T</strong>ornare <strong>M</strong>artedì, <strong>G</strong>iovedì, <strong>S</strong>abato <strong>U</strong>ltima <strong>N</strong>otte?"</em></p>
+            </div>
+        </section>
+
+        <!-- Sezione Quiz a scelta multipla e collegamento -->
+        <section class="scheda quiz-box">
+            <h2>🎯 Mettiti alla prova: Quiz</h2>
+            <p>Rispondi alle domande e completa i collegamenti, poi premi il pulsante per scoprire il tuo punteggio.</p>
+
+            <form id="quiz-form">
+                <!-- Domanda 1 -->
+                <div class="domanda">
+                    <p><strong>1. Qual è la forza che mantiene i pianeti in orbita attorno al Sole?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> Il magnetismo terrestre</label>
+                    <label><input type="radio" name="q1" value="b"> La forza di gravità del Sole</label>
+                    <label><input type="radio" name="q1" value="c"> Il vento solare</label>
+                </div>
+
+                <!-- Domanda 2 -->
+                <div class="domanda">
+                    <p><strong>2. Quali tra questi sono tutti pianeti rocciosi?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> Mercurio, Venere, Terra, Marte</label>
+                    <label><input type="radio" name="q2" value="b"> Giove, Saturno, Urano, Nettuno</label>
+                    <label><input type="radio" name="q2" value="c"> Terra, Marte, Giove, Plutone</label>
+                </div>
+
+                <!-- Domanda 3 -->
+                <div class="domanda">
+                    <p><strong>3. Dove si trova la fascia principale degli asteroidi?</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Tra la Terra e Marte</label>
+                    <label><input type="radio" name="q3" value="b"> Oltre l'orbita di Nettuno</label>
+                    <label><input type="radio" name="q3" value="c"> Tra Marte e Giove</label>
+                </div>
+
+                <!-- Domanda 4 -->
+                <div class="domanda">
+                    <p><strong>4. Da cosa sono composte principalmente le comete?</strong></p>
+                    <label><input type="radio" name="q4" value="a"> Ferro fuso e lava</label>
+                    <label><input type="radio" name="q4" value="b"> Ghiaccio, polvere e rocce</label>
+                    <label><input type="radio" name="q4" value="c"> Gas idrogeno ed elio</label>
+                </div>
+
+                <!-- Domanda 5: Collegamento termini-significato -->
+                <div class="domanda">
+                    <p><strong>5. Collega ogni termine alla sua definizione corretta:</strong></p>
+                    
+                    <div class="riga-collegamento">
+                        <span class="termine">🔄 Rotazione</span>
+                        <select name="m1" class="select-collegamento">
+                            <option value="">-- Scegli il significato --</option>
+                            <option value="orbita">Il percorso di un pianeta intorno al Sole</option>
+                            <option value="rotazione">Il movimento di un pianeta su se stesso (dì e notte)</option>
+                            <option value="satellite">Un corpo celeste che gira attorno a un pianeta</option>
+                            <option value="rivoluzione">Il giro completo intorno al Sole (durata dell'anno)</option>
+                        </select>
+                    </div>
+
+                    <div class="riga-collegamento">
+                        <span class="termine">📅 Rivoluzione</span>
+                        <select name="m2" class="select-collegamento">
+                            <option value="">-- Scegli il significato --</option>
+                            <option value="orbita">Il percorso di un pianeta intorno al Sole</option>
+                            <option value="rotazione">Il movimento di un pianeta su se stesso (dì e notte)</option>
+                            <option value="satellite">Un corpo celeste che gira attorno a un pianeta</option>
+                            <option value="rivoluzione">Il giro completo intorno al Sole (durata dell'anno)</option>
+                        </select>
+                    </div>
+
+                    <div class="riga-collegamento">
+                        <span class="termine">🌙 Satellite</span>
+                        <select name="m3" class="select-collegamento">
+                            <option value="">-- Scegli il significato --</option>
+                            <option value="orbita">Il percorso di un pianeta intorno al Sole</option>
+                            <option value="rotazione">Il movimento di un pianeta su se stesso (dì e notte)</option>
+                            <option value="satellite">Un corpo celeste che gira attorno a un pianeta</option>
+                            <option value="rivoluzione">Il giro completo intorno al Sole (durata dell'anno)</option>
+                        </select>
+                    </div>
+
+                    <div class="riga-collegamento">
+                        <span class="termine">🛸 Orbita</span>
+                        <select name="m4" class="select-collegamento">
+                            <option value="">-- Scegli il significato --</option>
+                            <option value="orbita">Il percorso di un pianeta intorno al Sole</option>
+                            <option value="rotazione">Il movimento di un pianeta su se stesso (dì e notte)</option>
+                            <option value="satellite">Un corpo celeste che gira attorno a un pianeta</option>
+                            <option value="rivoluzione">Il giro completo intorno al Sole (durata dell'anno)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Domande 6-9: vero o falso -->
+                <div class="domanda">
+                    <p><strong>6. Il Sole contiene circa il 99,8% della massa del Sistema Solare.</strong></p>
+                    <label><input type="radio" name="q6" value="vero"> Vero</label>
+                    <label><input type="radio" name="q6" value="falso"> Falso</label>
+                </div>
+
+                <div class="domanda">
+                    <p><strong>7. Venere è il pianeta più freddo del Sistema Solare.</strong></p>
+                    <label><input type="radio" name="q7" value="vero"> Vero</label>
+                    <label><input type="radio" name="q7" value="falso"> Falso</label>
+                </div>
+
+                <div class="domanda">
+                    <p><strong>8. Tutti i pianeti giganti esterni possiedono anelli.</strong></p>
+                    <label><input type="radio" name="q8" value="vero"> Vero</label>
+                    <label><input type="radio" name="q8" value="falso"> Falso</label>
+                </div>
+
+                <div class="domanda">
+                    <p><strong>9. La fascia principale degli asteroidi si trova tra Marte e Giove.</strong></p>
+                    <label><input type="radio" name="q9" value="vero"> Vero</label>
+                    <label><input type="radio" name="q9" value="falso"> Falso</label>
+                </div>
+
+                <button type="button" id="btn-quiz" class="btn">Calcola il punteggio</button>
+            </form>
+
+            <!-- Area in cui apparirà il risultato -->
+            <div id="risultato-quiz" class="risultato"></div>
+        </section>
+    </main>
+
+    <!-- Carichiamo il file con le 20 parole chiave per i giochi futuri -->
+    <script src="parole.js"></script>
+
+    <!-- Script per far funzionare l'esercizio e il quiz -->
+    <script>
+        // 1. Logica per il pulsante "Mostra la soluzione"
+        const btnSoluzione = document.getElementById('btn-soluzione');
+        const boxSoluzione = document.getElementById('box-soluzione');
+
+        btnSoluzione.addEventListener('click', function() {
+            // Mostra o nasconde il riquadro della soluzione
+            if (boxSoluzione.style.display === 'block') {
+                boxSoluzione.style.display = 'none';
+                btnSoluzione.textContent = 'Mostra la soluzione';
+            } else {
+                boxSoluzione.style.display = 'block';
+                btnSoluzione.textContent = 'Nascondi la soluzione';
+            }
+        });
+
+        // 2. Logica per la correzione del Quiz (scelta multipla + collegamenti)
+        const btnQuiz = document.getElementById('btn-quiz');
+        const risultatoDiv = document.getElementById('risultato-quiz');
+
+        // Risposte esatte per le 4 domande a scelta multipla
+        const risposteMultipla = {
+            q1: 'b',
+            q2: 'a',
+            q3: 'c',
+            q4: 'b'
+        };
+
+        // Risposte esatte per le 4 domande vero/falso
+        const risposteVeroFalso = {
+            q6: 'vero',
+            q7: 'falso',
+            q8: 'vero',
+            q9: 'vero'
+        };
+
+        // Risposte esatte per i 4 collegamenti della domanda 5
+        const risposteCollegamento = {
+            m1: 'rotazione',
+            m2: 'rivoluzione',
+            m3: 'satellite',
+            m4: 'orbita'
+        };
+
+        btnQuiz.addEventListener('click', function() {
+            let punteggio = 0;
+            const punteggioMassimo = 12; // 4 scelta multipla + 4 collegamenti + 4 vero/falso
+            let incompleto = false;
+
+            // Controlliamo le 4 domande a scelta multipla
+            for (let domanda in risposteMultipla) {
+                const scelta = document.querySelector(`input[name="${domanda}"]:checked`);
+                if (!scelta) {
+                    incompleto = true;
+                } else if (scelta.value === risposteMultipla[domanda]) {
+                    punteggio++;
+                }
+            }
+
+            // Controlliamo le 4 domande vero/falso
+            for (let domanda in risposteVeroFalso) {
+                const scelta = document.querySelector(`input[name="${domanda}"]:checked`);
+                if (!scelta) {
+                    incompleto = true;
+                } else if (scelta.value === risposteVeroFalso[domanda]) {
+                    punteggio++;
+                }
+            }
+
+            // Controlliamo i 4 collegamenti della domanda 5
+            for (let coppia in risposteCollegamento) {
+                const menu = document.querySelector(`select[name="${coppia}"]`);
+                // Reset eventuale bordo colorato precedente
+                menu.classList.remove('corretto', 'errato');
+
+                if (menu.value === "") {
+                    incompleto = true;
+                } else if (menu.value === risposteCollegamento[coppia]) {
+                    punteggio++;
+                    menu.classList.add('corretto');
+                } else {
+                    menu.classList.add('errato');
+                }
+            }
+
+            // Se manca qualche risposta, avvisiamo lo studente
+            if (incompleto) {
+                risultatoDiv.textContent = "⚠️ Completa tutte le domande e tutti i collegamenti prima di calcolare il punteggio!";
+                risultatoDiv.className = "risultato avviso";
+                return;
+            }
+
+            // Mostriamo il punteggio finale su 12 con un messaggio incoraggiante
+            let messaggio = `Hai totalizzato ${punteggio} su ${punteggioMassimo}! `;
+            if (punteggio >= 10) {
+                messaggio += "🌟 Eccellente! Sei un vero astronomo!";
+                risultatoDiv.className = "risultato ottimo";
+            } else if (punteggio >= 7) {
+                messaggio += "👍 Buon lavoro! Controlla i riquadri evidenziati per perfezionare gli ultimi dettagli.";
+                risultatoDiv.className = "risultato buono";
+            } else {
+                messaggio += "📚 Rileggi con calma le schede qui sopra e riprova!";
+                risultatoDiv.className = "risultato riprova";
+            }
+
+            risultatoDiv.textContent = messaggio;
+        });
+
+        // Controllo in console per verificare che parole.js sia stato caricato correttamente
+        console.log("Parole chiave caricate per i giochi:", paroleChiave.length);
+    </script>
+</body>
+</html>
